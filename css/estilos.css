@@ -1,0 +1,378 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* tipografia*/
+
+*{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+}
+
+/* LOGO O IDENTIDAD DE MARCA */
+
+.logoMadi {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;  
+    
+}
+
+/* FIN DE LOGO O IDENTIDAD DE MARCA */
+
+
+body {
+    background-color: white;
+}
+
+
+/* ----------------------------------------------/
+
+             GRID DEL LIYOUT
+     
+  /----------------------------------------------*/
+  
+  
+
+
+
+
+
+
+/* ----------------------------------------------/
+
+             GRID DEL LIYOUT
+     
+  /----------------------------------------------*/
+  
+  
+.container { 
+    display: grid;
+    grid-template-areas:  
+                          
+                            "header header"
+                            "nav nav"
+                          "main main"
+                          "footer footer";
+                              
+}
+
+nav {
+    grid-area: nav;
+}
+
+/* --------------------------------------------------/
+ COMIENZO DE ESTILOS DEL MENU DE NAVEACION 
+/--------------------------------------------------*/
+nav {
+    
+    background-color: white;
+    top: 0;
+    left: 0p;
+    right: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.menu > li {
+    position: relative;
+    
+    
+    
+    }
+
+.menu > li > a { 
+
+    display: block;
+    padding: 5px 5px;
+    margin: 20px;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+    border-style: solid;
+    
+}
+
+.subMenu {
+    position: absolute;
+    background-color: rgb(250, 246, 246);
+    padding: 15px 20px;
+    width: 75%;
+    display: none;
+
+    
+}
+
+.subMenu  li  a{
+    display: block;
+    padding: 15px;
+    color: black;
+    font-size: 5px;
+    text-decoration: none;
+}
+
+.menu li:hover .subMenu {
+ display: block;
+}
+
+/* ---------------------------------------------/
+         FIN DE DEL MENU DE NAVEGACION
+/----------------------------------------------*/
+
+
+header {
+    grid-area: header;
+}
+
+/* -------------------------------------------/    
+        ESTILOS DEL HEADER
+/---------------------------------------------*/
+header {
+    position: relative;
+}
+
+header h1 { 
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* -------------------------------------------/    
+      FIN DE ESTILOS DEL HEADER
+/---------------------------------------------*/
+
+main { 
+     grid-area: main;
+     padding-bottom: 50px;
+}
+
+
+/* -------------------------------------------/    
+      ESTILOS DEL MAIN
+/---------------------------------------------*/
+
+
+.parrafo  {
+    margin: 10px;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+div img { 
+    width: 28%;
+    display: flexbox;
+}
+
+.envio {
+    text-align: center;
+}
+
+.shipping { 
+    width: 60px;
+    margin-left: 490px;
+    
+}
+
+/* -------------------------------------------/    
+      FIN DE ESTILOS DEL MAIN
+/---------------------------------------------*/
+
+footer {
+    grid-area: footer;
+}
+
+
+/* -------------------------------------------/    
+      ESTILOS DEL FOOTER
+/---------------------------------------------*/
+    footer { 
+        text-align: center;
+        padding-top: 100px;
+    }
+   .igLogo { 
+       width: 50px;
+       display: flex;
+       margin-left: 490px;
+      
+    }
+
+    .linkIg { 
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+        padding-top: 25px;
+    }
+
+    .derechos { 
+        font-size: 13px;
+        
+    }
+
+    span { font-size: 30px;
+            padding-top: 30px;}
+ 
+/* -------------------------------------------/    
+      FIN ESTILOS DEL FOOTER
+/---------------------------------------------*/
+
+/* ----------------------------------
+        PROPIEDADES DEL HTML NOSOTROS
+    --------------------------------- */
+
+    .parrafoNosotros { 
+        margin: 20px 30px;
+        font-size: 20px;
+    }
+    
+    .shipping {
+        width: 60px;
+        padding-top: 20px;
+        
+    }
+    /* ---------------------------------/
+     FIN DE  NOSOTROS HTML
+    /--------------------------------- */  
+    
+    
+    /* -----------------------------------/
+      PROPIEDADES DE CONTACTO HTML 
+      /---------------------------------*/
+    
+    fieldset { 
+        border-style: ridge;
+        background-color: black;
+        color: white;
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 40px; padding: 40px;
+        
+    }
+    
+    .tuNombre { 
+        display: flexbox;
+        flex-direction: row;
+        padding: 10px;
+    }
+    
+    .tuEmail { 
+        display: flexbox;
+        flex-direction: row;
+        padding: 10px;
+    }
+    
+    .mesNacimiento { 
+        display: flexbox;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+    }
+    
+    
+    h2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    
+    .tituloPromo {
+        font-size: 25px;
+     
+    }
+    
+    /* -----------------------------------/
+      FIN DE PROPIEDADES DE CONTACTO HTML 
+      /---------------------------------*/
+    
+    
+    
+     /* ----------------------------------/
+
+        PROPIEDADES DE PRODUCTOS HTML
+     / ----------------------------------*/   
+    
+    .productos { 
+    
+    width: 1000px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    /* ----------------- media queries ---------------------*/
+     
+@media (max-width: 380px) {
+
+    h1 { display: none;}
+
+     .container { 
+        width: 5%;
+    }
+  
+
+    .parrafo { font-size: 25px;}
+
+    .shipping { display: none;}
+
+    .igLogo { display: none;}
+
+    .envio { font-size: 15px;}
+
+    span { font-size: 15px;}
+
+    .linkIg { font-size: 15px;}
+       
+    
+}
+
+        
+        
+    
+    
+        
+     
+    
+        
+       
+  
+
+  
+    
+     
+    
+
+
+
+    
+
+    
+
+
+
